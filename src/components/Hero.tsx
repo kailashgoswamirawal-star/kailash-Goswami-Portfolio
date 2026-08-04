@@ -172,7 +172,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewProjects, onOpenContact, onOpe
                 Years Experience
               </p>
               <p className="text-[10px] text-[#999999] uppercase tracking-wider">
-                Across US, EU, &amp; Global Enterprise
+                Across India
               </p>
             </div>
           </div>

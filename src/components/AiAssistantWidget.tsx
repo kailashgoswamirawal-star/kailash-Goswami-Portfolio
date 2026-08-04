@@ -23,10 +23,16 @@ export const AiAssistantWidget: React.FC<AiAssistantWidgetProps> = ({ isOpen, on
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const quickPrompts = [
-    'What AI & Sales IT projects has Kailash built?',
-    'What is Kailash\'s tech stack?',
-    'Is Kailash available for enterprise projects?',
-    'How do I schedule a discovery call?',
+    'Tell me about your Sales Force Automation (SFA) project.',
+    'Explain your DMS implementation strategy.',
+    'What is your ERP Integration Strategy?',
+    'Tell me about the AI Chatbot project architecture.',
+    'Explain your AI Voice Agent implementation.',
+    'What is your Power BI Analytics strategy?',
+    'Explain your AI Forecasting & ML models.',
+    'What is Kailash\'s Digital Transformation methodology?',
+    'How do you manage projects and UAT?',
+    'Describe your leadership & vendor management approach.'
   ];
 
   const scrollToBottom = () => {
@@ -107,7 +113,7 @@ export const AiAssistantWidget: React.FC<AiAssistantWidgetProps> = ({ isOpen, on
                 KALI X AI
                 <span className="w-2 h-2 rounded-full bg-[#9CFF00] animate-pulse" />
               </h4>
-              <p className="text-[10px] text-[#999999]">Powered by Gemini 3.6 Flash</p>
+              <p className="text-[10px] text-[#999999]">Official AI Career &amp; Strategy Representative</p>
             </div>
           </div>
 

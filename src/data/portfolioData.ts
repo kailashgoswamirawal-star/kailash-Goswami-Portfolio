@@ -351,28 +351,37 @@ export const TIMELINE: TimelineItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "m1",
-    name: "Rajesh Sharma",
-    role: "CTO & IT Delivery Head",
+    name: "Naveen Gulati",
+    role: "CTO",
     company: "Colorbar Cosmetics",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+    avatar: "",
     quote: "Kailash led our SFA and DMS CRM rollout across 230+ distributors and 2,500+ field force flawlessly. His integration of SAM AI sales assistant brought unprecedented efficiency to our daily sales reporting.",
     rating: 5
   },
   {
     id: "m2",
-    name: "Anil Verma",
-    role: "VP of Sales Operations",
-    company: "VLCC Personal Care",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
-    quote: "Kailash built our Saarthi NG DMS and Beauty Advisor app from scratch. His domain mastery in FMCG sales automation, geo-fencing, and master data governance is unmatched.",
+    name: "Dhiraj Gautam",
+    role: "Delivery Head",
+    company: "Colorbar Cosmetics",
+    avatar: "",
+    quote: "Kailash's execution during our nationwide sales IT transformation was exceptional. He ensured zero-downtime integration between ERP systems, handheld SFA, and live executive dashboards.",
     rating: 5
   },
   {
     id: "m3",
+    name: "Raviraj Bhattacharya",
+    role: "IT Head",
+    company: "VLCC Personal Care",
+    avatar: "",
+    quote: "Kailash built our Saarthi NG DMS and Beauty Advisor app from scratch. His domain mastery in FMCG sales automation, geo-fencing, and master data governance is unmatched.",
+    rating: 5
+  },
+  {
+    id: "m4",
     name: "Vikram Malhotra",
     role: "General Manager - IT",
     company: "Hamdard Laboratories",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200",
+    avatar: "",
     quote: "Kailash handled our stockist DMS rollout with total commitment. He maintained high SLA standards and ensured our field teams were fully trained on handheld applications.",
     rating: 5
   }

@@ -68,11 +68,17 @@ export const TestimonialsSection: React.FC = () => {
 
               {/* Author Info */}
               <div className="flex items-center justify-center gap-4">
-                <img
-                  src={activeTestimonial.avatar}
-                  alt={activeTestimonial.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                />
+                {activeTestimonial.avatar ? (
+                  <img
+                    src={activeTestimonial.avatar}
+                    alt={activeTestimonial.name}
+                    className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                  />
+                ) : (
+                  <div className="w-14 h-14 rounded-full bg-[#111111] text-[#C7FF3F] font-black text-base flex items-center justify-center border-2 border-[#C7FF3F] shadow-md uppercase tracking-wider shrink-0">
+                    {activeTestimonial.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                )}
                 <div className="text-left">
                   <h4 className="text-base font-extrabold text-[#111111]">{activeTestimonial.name}</h4>
                   <p className="text-xs text-[#777777]">

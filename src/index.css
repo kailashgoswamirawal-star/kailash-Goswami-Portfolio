@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 30px rgba(199, 255, 63, 0.35);
+  }
+
+  .neon-glow-hover:hover {
+    box-shadow: 0 0 35px rgba(199, 255, 63, 0.5);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    border: 1px solid #ECECEC;
+  }
+
+  /* High Density Theme Custom Classes */
+  .hd-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #F6F7FB;
+    border: 1px solid #ECECEC;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #777777;
+  }
+
+  .hd-badge-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #C7FF3F;
+    border-radius: 9999px;
+    box-shadow: 0 0 8px #C7FF3F;
+  }
+}
+
+

@@ -97,11 +97,17 @@ export const ProcessSection: React.FC = () => {
               </p>
 
               <div className="flex items-center gap-3">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  className="w-11 h-11 rounded-full object-cover border-2 border-white shadow-sm"
-                />
+                {t.avatar ? (
+                  <img
+                    src={t.avatar}
+                    alt={t.name}
+                    className="w-11 h-11 rounded-full object-cover border-2 border-white shadow-sm"
+                  />
+                ) : (
+                  <div className="w-11 h-11 rounded-full bg-[#111111] text-[#C7FF3F] font-black text-xs flex items-center justify-center border-2 border-[#C7FF3F] shadow-sm uppercase shrink-0">
+                    {t.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                )}
                 <div>
                   <h4 className="text-xs font-bold text-[#111111]">{t.name}</h4>
                   <p className="text-[11px] text-[#777777]">{t.role} at <span className="font-semibold text-[#111111]">{t.company}</span></p>

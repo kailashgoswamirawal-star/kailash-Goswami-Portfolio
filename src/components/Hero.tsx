@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight, Award, CheckCircle2, Sparkles, MessageSquare, Terminal } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
+import { Hero3DCard } from './Hero3DCard';
 
 interface HeroProps {
   onViewProjects?: () => void;
@@ -204,24 +205,8 @@ export const Hero: React.FC<HeroProps> = ({ onViewProjects, onOpenContact, onOpe
             </div>
           </div>
 
-          {/* Bento Card 04 (CTA Work With Me) */}
-          <a
-            href="#contact"
-            onClick={(e) => {
-              if (onOpenContact) {
-                e.preventDefault();
-                onOpenContact();
-              }
-            }}
-            className="bg-[#F6F7FB] border border-dashed border-[#999999] p-6 rounded-[24px] flex flex-col justify-center items-center text-center gap-2 group hover:border-[#111111] hover:bg-white transition-all cursor-pointer"
-          >
-            <div className="w-12 h-12 rounded-full border-2 border-[#111111] flex items-center justify-center font-bold text-[#111111] group-hover:bg-[#C7FF3F] transition-colors">
-              <ArrowUpRight className="w-5 h-5" />
-            </div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-[#777777] group-hover:text-[#111111]">
-              Work With Me
-            </p>
-          </a>
+          {/* Bento Card 04 (Interactive 3D Object) */}
+          <Hero3DCard />
         </motion.div>
 
       </div>

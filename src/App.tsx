@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { SeoHead } from './components/SeoHead';
 import { ScrollProgress } from './components/ScrollProgress';
+import { ThreeBackground } from './components/ThreeBackground';
+import { WelcomeAudio } from './components/WelcomeAudio';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { TrustedCompanies } from './components/TrustedCompanies';
@@ -41,9 +43,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#111111] antialiased selection:bg-[#C7FF3F] selection:text-[#111111]">
+    <div className="min-h-screen bg-white text-[#111111] antialiased selection:bg-[#C7FF3F] selection:text-[#111111] relative">
       <SeoHead />
       <ScrollProgress />
+      <ThreeBackground />
+      <WelcomeAudio />
       
       <Navbar
         onOpenAiAssistant={() => setIsAiWidgetOpen(true)}
